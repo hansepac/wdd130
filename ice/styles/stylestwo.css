@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-size: 0;
+    background-color: gray;
+}
+#title {
+    width: 100%;
+}
+.gallery {
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+}
+.gallery img {
+    width: 20%;
+    border-radius: 100%;
+    border: 10px solid #453f3f;
+    margin: auto 3%;
+}
