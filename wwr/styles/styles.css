@@ -5,6 +5,7 @@
     --accent2-color: #C78965;
     --background-color: #fcfbfb;
     --background-gray: #eaedee;
+    --background-black: #0a0b0b;
   
     --heading-font: Verdana, Arial, sans-serif;
     --paragraph-font: Tahoma, 'Trebuchet MS', sans-serif;
@@ -19,10 +20,14 @@
     --nav-hover-link-color: #fcfbfb;
     --nav-hover-background-color: #477B7A;
     --footer-background-color: #477B7A;
+    --background-gradient: linear-gradient(135deg, #52EBEA 8%, #2B9E9D 40%, #EBAF8D 85%);
+    --gradient: linear-gradient(135deg, #C31A86 8%, #933FA0 50%, #00ADEE 92%);
+    --brown-gradient: linear-gradient(135deg, #EBAF8D, #C78965 50%);
+    --blue-gradient: radial-gradient(#52EBEA, #2B9E9D 95%);
   }
 
 #background{
-    background-color: var(--primary-color);
+    background-image: var(--background-gradient);
     height: 725px;
 }
 #content{
@@ -30,12 +35,12 @@
     margin: 0 auto;
 }
 body{
-    background-color: var(--background-color);
+    background-color: var(--background-black);
     margin: 0;
     padding: 0;
 }
 header{
-    background-color: var(--secondary-color);
+    background-image: var(--background-gradient);
 }
 .logo{
     width: 80px;
@@ -47,12 +52,14 @@ nav a{
     text-align: center;
     text-decoration: none;
     color: var(--nav-hover-link-color);
-    background-color: var(--nav-background-color);
+    background-image: var(--brown-gradient);
     font-family: var(--heading-font);
-    padding: 35px;
+    padding: 10px 35px;
+    border-radius: 5px;
+    margin: 10px;
 }
 nav a:hover{
-    background-color: var(--nav-hover-background-color);
+    background-image: var(--blue-gradient);
     color: var(--nav-hover-link-color);
 }
 #hero-img{
@@ -78,7 +85,7 @@ h4 {
     text-align: center
 }
 .book, .join{
-    background-color: var(--accent1-color);
+    background-image: var(--brown-gradient);
     text-decoration: none;
     color: var(--nav-link-color);
     font-size: 18px;
@@ -88,8 +95,9 @@ h4 {
     border-radius: 5px;
 }
 .book:hover, .join:hover{
-    background-color: var(--secondary-color);
-    color: var(--nav-hover-link-color);
+    background-image: var(--blue-gradient);
+    color: var(--nav-link-color);
+    transform: scale(1.1, 1.1);
 }
 main section{
     text-align: center
@@ -149,8 +157,10 @@ footer p{
 }
 footer p a:hover{
     text-decoration: underline;
-    color: var(--footer-background-color);
-    background-color: var(--background-color);
+    color: var(--nav-link-color);
+    background-image: var(--brown-gradient);
+    padding: 3px;
+    border-radius: 5px;
 }
 footer a{
     color: var(--paragraph-color-on-color);
